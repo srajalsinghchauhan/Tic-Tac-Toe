@@ -1,0 +1,50 @@
+.container {
+  text-align: center;
+}
+
+.status {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  color: #dfe6e9;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.square {
+  background-color: #636e72;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+}
+
+.square.disabled {
+  cursor: not-allowed;
+  background-color: #b2bec3;
+}
+
+.restart {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2d3436;
+  background-color: #00cec9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
